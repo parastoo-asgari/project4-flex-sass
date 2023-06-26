@@ -1,0 +1,680 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Lora;
+  src: url("Lora-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: lora;
+  src: url("Lora-Italic-VariableFont_wght.ttf");
+}
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+main > .head {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../image/1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+}
+main > .head > header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main > .head > header > .logo {
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: lora;
+  transition: 1s;
+}
+main > .head > header > .logo:hover {
+  cursor: pointer;
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #fa6f2f;
+  transition: 0.8s ease all;
+  transform: scale(1.1);
+}
+main > .head > header > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+main > .head > header > div > a {
+  width: 170px;
+  height: 40px;
+  background-color: #ff5200;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  text-decoration: none;
+  font-family: lora;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  transition: 1s;
+}
+main > .head > header > div > a:hover {
+  background-color: rgba(248, 103, 36, 0.8823529412);
+}
+main > .head > header > .logo, main > .head > header > div {
+  width: 20%;
+}
+main > .head > header > nav {
+  width: 60%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main > .head > header > nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main > .head > header > nav > ul > li {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  font-family: lora;
+}
+main > .head > header > nav > ul > li > ul {
+  transition: 1s;
+}
+main > .head > header > nav > ul > li:hover:nth-of-type(2) > .submenu {
+  opacity: 1;
+  visibility: visible;
+}
+main > .head > header > nav > ul > li:nth-of-type(2) > .submenu {
+  background-color: white;
+  border-radius: 10px 0 10px 0;
+  position: absolute;
+  margin-top: 180px;
+  opacity: 0;
+  visibility: hidden;
+}
+main > .head > header > nav > ul > li:nth-of-type(2) > .submenu > li {
+  list-style: none;
+  width: 200px;
+  height: 40px;
+  color: rgb(116, 112, 112);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(247, 242, 242);
+}
+main > .head > header > nav > ul > li:nth-of-type(2) > .submenu > li:hover {
+  color: #ff5200;
+  font-family: lora;
+}
+main > .head > header > nav > ul > li > a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.719);
+  transition: 0.6s;
+}
+main > .head > header > nav > ul > li > a:hover {
+  color: #ff5200;
+}
+main > .head .main-head {
+  width: 50%;
+  min-height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+}
+main > .head .main-head > * {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+main > .head .main-head > h3 {
+  font-size: 20px;
+  font-family: Lora;
+}
+main > .head .main-head > h1 {
+  font-size: 90px;
+  font-family: "Bacasime Antique", serif;
+}
+main > .head .main-head > p {
+  text-align: center;
+  font-size: 22px;
+  font-family: Lora;
+}
+main > .head .main-head > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 45px;
+  background-color: #ff5200;
+  text-decoration: none;
+  border-radius: 30px;
+  font-family: lora;
+}
+main .foods {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #fee2b3;
+  display: flex;
+  padding: 90px 100px;
+}
+main .foods > .left {
+  width: 30%;
+  height: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  margin-top: 40px;
+}
+main .foods > .left > h5 {
+  width: 100%;
+  display: flex;
+  color: #696969;
+}
+main .foods > .left > h2 {
+  font-size: 30px;
+  color: #ff5200;
+  display: flex;
+  justify-content: center;
+  font-family: "Bacasime Antique", serif;
+}
+main .foods > .left > div {
+  width: 90%;
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 30px;
+  border-radius: 40px;
+  transition: 0.6s;
+}
+main .foods > .left > div:hover {
+  background-color: white;
+}
+main .foods > .left > div > figure {
+  height: 40px;
+}
+main .foods > .left > div > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+main .foods > .left > div > a {
+  text-decoration: none;
+  font-size: 22px;
+  color: rgb(44, 43, 43);
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  font-family: lora;
+}
+main .foods > .right {
+  width: 70%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main .foods > .right > h2 {
+  display: flex;
+  width: 100%;
+  color: rgb(102, 98, 98);
+  margin-top: 30px;
+  padding-left: 40px;
+  font-size: 40px;
+  font-family: "Bacasime Antique", serif;
+}
+main .foods > .right > figure {
+  width: 350px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 20px;
+  margin: 30px 20px;
+}
+main .foods > .right > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+  transition: 1s;
+  cursor: pointer;
+}
+main .foods > .right > figure > img:hover {
+  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+main .foods > .right > figure > figcaption {
+  text-align: left;
+  font-family: Lora;
+}
+main .foods > .right > figure > figcaption > span {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #ff5200;
+}
+main .foods > .right > figure > figcaption > p {
+  font-size: 15px;
+  margin-top: 10px;
+}
+main .bottom-food {
+  width: 100%;
+  height: 300px;
+  background-color: #fee2b3;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .bottom-food > * {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main .bottom-food > h4 {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.658);
+  font-family: Lora;
+}
+main .bottom-food > h2 {
+  display: flex;
+  justify-content: center;
+  color: #ff5200;
+  font-size: 30px;
+  font-family: "Bacasime Antique", serif;
+}
+main .bottom-food > .box {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main .bottom-food > .box > div {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 2px solid rgba(243, 213, 158, 0.6039215686);
+  position: relative;
+  transition: 0.5s;
+}
+main .bottom-food > .box > div:hover::before {
+  opacity: 0.7;
+}
+main .bottom-food > .box > div::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: white;
+  opacity: 0;
+}
+main .bottom-food > .box > div > * {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+main .bottom-food > .box > div > img {
+  width: 40%;
+  height: 55%;
+  margin-left: 70px;
+  z-index: 1;
+}
+main .bottom-food > .box > div > span {
+  color: #ff5200;
+  font-size: 20px;
+  z-index: 1;
+}
+main .gallery {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../image/17.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  z-index: 1;
+  padding: 100px 100px;
+}
+main .gallery::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #f1cf95;
+  opacity: 0.7;
+  z-index: -1;
+}
+main .gallery .right {
+  width: 60%;
+  min-height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+}
+main .gallery .right > h2 {
+  font-size: 30px;
+  color: #ff5200;
+  width: 100%;
+  margin-left: 20px;
+  font-family: Lora;
+}
+main .gallery .right > figure {
+  width: 300px;
+  height: 160px;
+  margin: 3px 20px;
+  overflow: hidden;
+}
+main .gallery .right > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  cursor: pointer;
+  transition: 1s;
+}
+main .gallery .right > figure > img:hover {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+main .gallery .right > a {
+  width: 200px;
+  height: 50px;
+  background-color: #ff5200;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 30px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: lora;
+  border-radius: 30px;
+  transition: 0.6s;
+}
+main .gallery .right > a:hover {
+  background-color: #fa6f2f;
+}
+main .gallery > .left {
+  width: 40%;
+  min-height: 500px;
+}
+main .gallery > .left > * {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  margin-top: 10px;
+  color: #3b3a3a;
+  font-size: 20px;
+  font-family: Lora;
+}
+main .gallery > .left > img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-top: 50px;
+}
+main .gallery > .left > h3 {
+  font-size: 20px;
+  color: #ff5200;
+}
+main .events {
+  width: 100%;
+  min-height: 110vh;
+  background-color: #f1cf95;
+  padding: 20px 50px;
+}
+main .events > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  font-family: Lora;
+}
+main .events > h2 {
+  color: #ff5200;
+  font-size: 30px;
+}
+main .events > h4 {
+  margin-top: 30px;
+}
+main .events > section {
+  display: flex;
+  margin-top: 60px;
+}
+main .events > section > .left-events {
+  width: 50%;
+  height: 450px;
+  display: flex;
+}
+main .events > section > .left-events > figure {
+  width: 550px;
+  height: 350px;
+}
+main .events > section > .left-events > figure > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .events > section .right-events {
+  width: 40%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+}
+main .events > section .right-events > * {
+  width: 100%;
+  color: #3b3a3a;
+}
+main .events > section .right-events > span {
+  color: #ff5200;
+  font-size: 30px;
+}
+main .events > section .right-events > div {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+main .events > section .right-events > div > span {
+  font-size: 25px;
+}
+main .book-table {
+  width: 100%;
+  min-height: 350px;
+  background-image: url("../image/24.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+  padding: 0 50px;
+  position: relative;
+  display: flex;
+}
+main .book-table::after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #fad596;
+  opacity: 0.7;
+  z-index: -1;
+}
+main .book-table > div {
+  width: 50%;
+  height: 250px;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+main .book-table > div > * {
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: #201f1f;
+}
+main .book-table > div > a {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background-color: #ff5200;
+  border-radius: 30px;
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: lora;
+}
+main .book-table > div > h4 {
+  color: #4d4c4c;
+}
+main .book-table > div > h2 {
+  font-family: "Bacasime Antique", serif;
+}
+main .book-table > div > p {
+  line-height: 30px;
+  font-family: Lora;
+}
+main .foot {
+  width: 100%;
+  min-height: 400px;
+  background-color: #645f56;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Lora;
+}
+main .foot > div {
+  width: 300px;
+  height: 250px;
+  padding-left: 20px;
+}
+main .foot > div:nth-of-type(1) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  color: white;
+}
+main .foot > div:nth-of-type(1) > span {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+main .foot > div:nth-of-type(1) > span > i {
+  font-size: 18px;
+  color: #1f1e1e;
+  margin-left: 10px;
+  background-color: rgb(250, 248, 248);
+  padding: 7px;
+  transition: 0.5s;
+  border-radius: 50%;
+}
+main .foot > div:nth-of-type(1) > span > i:hover {
+  background-color: #ff5200;
+}
+main .foot > div:nth-of-type(2), main .foot > div:nth-of-type(3) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+main .foot > div:nth-of-type(2) > ul > li, main .foot > div:nth-of-type(3) > ul > li {
+  list-style-type: none;
+  color: rgb(196, 191, 191);
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  line-height: 50px;
+  transition: 0.7s;
+}
+main .foot > div:nth-of-type(2) > ul > li:hover, main .foot > div:nth-of-type(3) > ul > li:hover {
+  color: white;
+}
+main .foot > div:nth-of-type(2) > ul > li:first-of-type, main .foot > div:nth-of-type(3) > ul > li:first-of-type {
+  font-size: 30px;
+  color: white;
+}
+main .foot > div:nth-of-type(4) {
+  color: white;
+  line-height: 50px;
+}
+main .foot > div:nth-of-type(4) > h4 {
+  font-size: 30px;
+  color: #ff5200;
+}/*# sourceMappingURL=master.css.map */
